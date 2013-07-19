@@ -11,10 +11,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'figaro'
 gem 'haml-rails'
 gem 'sendgrid'
-group :assets do
-  gem 'compass-rails'
-  gem 'zurb-foundation'
-end
+gem 'compass-rails'
+gem 'zurb-foundation'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]

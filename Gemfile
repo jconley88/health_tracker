@@ -13,6 +13,8 @@ gem 'haml-rails'
 gem 'sendgrid'
 gem 'compass-rails'
 gem 'zurb-foundation'
+gem 'bcrypt-ruby', '~> 3.0.0', :require => false
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]

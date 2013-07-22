@@ -1,0 +1,16 @@
+%h1 Log In
+.row.large-4.columns
+  = form_tag sessions_path do
+    %fieldset
+      %legend Log In
+      .row
+        .large-10.columns
+          = label_tag :email
+          = text_field_tag :email
+      .row
+        .large-10.columns
+          = label_tag :password
+          = password_field_tag :password
+      .row
+        .columns
+          = submit_tag 'Log In', :class => 'button'

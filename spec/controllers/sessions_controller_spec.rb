@@ -12,7 +12,7 @@ describe SessionsController do
     end
 
     it "renders new on error" do
-      post 'create', user_id: 'n/a'
+      post 'create'
       expect(response).to render_template :new
       expect(response.status).to eq 401  #unauthorized
       expect(flash[:alert]).to match /invalid/i

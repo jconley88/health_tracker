@@ -1,0 +1,20 @@
+%h1 Sign Up
+.row.large-4.columns
+  = form_for @user do |f|
+    %fieldset
+      %legend Sign Up
+      .row
+        .large-10.columns
+          = f.label :email
+          = f.text_field :email
+      .row
+        .large-10.columns
+          = f.label :password
+          = f.password_field :password
+      .row
+        .large-10.columns
+          = f.label :password_confirmation, 'Password Confirmation'
+          = f.password_field :password_confirmation
+      .row
+        .columns
+          = submit_tag 'Sign Up', :class => 'button'

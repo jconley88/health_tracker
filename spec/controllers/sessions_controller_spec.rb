@@ -19,4 +19,12 @@ describe SessionsController do
       expect(flash).to only_be_now
     end
   end
+
+  describe '#current_user' do
+    it 'returns the current user' do
+      user = create :user, password: '123'
+      post 'create', email: user.email, password: '123'
+      expect(@controller.current_user).to eq user
+    end
+  end
 end

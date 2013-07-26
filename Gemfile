@@ -13,6 +13,7 @@ gem 'haml-rails'
 gem 'sendgrid'
 gem 'compass-rails'
 gem 'zurb-foundation'
+gem 'foundation_rails_helper', github: 'jconley88/foundation_rails_helper', branch: 'wrapper_div'
 gem 'bcrypt-ruby', '~> 3.0.0', :require => false
 
 group :development do
